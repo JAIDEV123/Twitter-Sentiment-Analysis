@@ -1,0 +1,3 @@
+export API_KEY=gBMxKrvd1p28vAcumpBcWQBLn 
+export API_SECRET=xHhbLSkYzM8lU6FJP9W1oXebQdjBTZu7wK2RhK1i8iTO6308Kc  
+python3 application.py

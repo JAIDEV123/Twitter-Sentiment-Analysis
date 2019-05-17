@@ -40,12 +40,27 @@ def search():
             neutral+=1
             
     s=positive+negative+neutral
-    positive=(positive/s)*100
-    negative=(negative/s)*100
-    neutral=(neutral/s)*100
     
+    try:
+        positive=(positive/s)*100
+    except:
+        positive=0
+    
+    try:
+        negative=(negative/s)*100
+    except:
+        negative=0
+    
+    try:
+        neutral=(neutral/s)*100
+    except:
+        neutral=0
+        
     # generate chart
     chart = helpers.chart(positive, negative, neutral)
 
     # render results
     return render_template("search.html", chart=chart, screen_name=screen_name)
+
+if __name__ == '__main__':
+    app.run(debug=True)
