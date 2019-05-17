@@ -8,7 +8,7 @@
 pip3 install --user -r requirements.txt
 ```
 
-##Setting Up
+## Setting Up
 
 ```bash
 bash run.sh
