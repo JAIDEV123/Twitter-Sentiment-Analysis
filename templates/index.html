@@ -1,11 +1,15 @@
 {% extends "layout.html" %}
 
 {% block body %}
-<form action="{{ url_for('search') }}" class="form-inline" method="get">
-    <div class="form-group">
-      <label class="sr-only" for="screen_name">screen_name</label>
-      <input class="form-control" name="screen_name" placeholder="@screen_name" type="text"/>
-  </div>
-  <button class="btn btn-default" type="submit">Search</button>
-</form>
+
+	<div class="container-fluid h-100">
+		<div class="row h-50">
+			<div class="col h-100">
+				<img src="https://media.sproutsocial.com/uploads/2017/02/twitter-instream-image.png" class="img-responsive">
+			</div>
+		</div>
+		<div class="row h-50">
+		</div>
+	</div>
+
 {% endblock %}
