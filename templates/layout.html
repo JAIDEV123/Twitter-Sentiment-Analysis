@@ -26,13 +26,18 @@
                         <label class="sr-only" for="screen_name">screen_name</label>
                         <input class="form-control d-inline" name="screen_name" placeholder="@screen_name" type="text"/>
                     </div>
-                    <button class="btn btn-light d-inline" type="submit">Search</button>
+                    <button class="btn btn-primary d-inline" type="submit">Search</button>
                 </form>
 
             </div>
 
-            {% block body %}{% endblock %}
-        
         </div>
+
+        <div class="container">
+
+            {% block body %}{% endblock %}
+                
+        </div>
+    
     </body>
 </html>
